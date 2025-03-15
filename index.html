@@ -1,228 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Personal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <title>Portafolio Personal - Gabriel Vargas</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <h1>Rudy Manzaneda</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre Mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#recommendations">Recomendaciones</a></li>
-            <li><a href="#articles">Publicaciones</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>  
-    </nav>
-</header>
-
 <body>
-    <div class="container">
-        <section id="about" class = "hero">
-            <div>
-                <h2>Sobre mi</h2>
-                <p>Soy un estudiante de la Universidad de Valle de México, con una licenciatura en Ciencias de la Computación. Mi objetivo es mejorar mi capacidad de aprendizaje y mejorar mi capacidad para resolver problemas de manera creativa y creativa. Además, quiero mejorar mi habilidad para trabajar en equipo y colaborar con otros profesionales.</p>
-                <p>Mi principal habilidad es el desarrollo de software, ya que me gusta trabajar en proyectos y me gusta aprender nuevas tecnologías. También me gusta la comunicación y la colaboración, ya que me gusta trabajar en equipo y colaborar con otros profesionales.</p>
-                <p>Además, quiero mejorar mi habilidad para trabajar en equipo y colaborar con otros profesionales.</p>
-            </div>
-            <img src="imagenes/perfil/foto.png" alt="Perfil">
-        </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Sistema de gestion de inventario</h3>
-                    <p>El objetivo de este proyecto es crear un sistema de gestión de inventario que permita a los usuarios registrar productos, almacenar información sobre los productos y realizar búsquedas en los productos registrados.</p>
-                    <p>El sistema debe tener una interfaz de usuario intuitiva y fácil de usar, y debe ser capaz de realizar búsquedas en los productos registrados.</p>
-                    <p>Además, el sistema debe ser capaz de generar informes detallados sobre los productos registrados, incluyendo la cantidad de productos registrados, la cantidad de productos en stock y la cantidad de productos en stock.</p>
-                    <p>El sistema debe ser capaz de realizar búsquedas en los productos registrados y generar informes detallados sobre los productos registrados.</p>
-                    <p>Además, el sistema debe ser capaz de generar informes detallados sobre los productos registrados, incluyendo la cantidad de productos registrados, la cantidad de productos en stock y la cantidad de productos en stock.</p>
-                </div>
-                <div class="project">
-                    <h3>Sistema de gestión de clientes</h3>
-                    <p>El objetivo de este proyecto es crear un sistema de gestión de clientes que permita a los usuarios registrar información sobre sus clientes, almacenar información sobre sus clientes y realizar búsquedas en la información registrada de sus clientes.</p>
-                    <p>El sistema debe tener una interfaz de usuario intuitiva y fácil de usar, y debe ser capaz de realizar búsquedas en la información registrada de sus clientes.</p>
-                    <p>Además, el sistema debe ser capaz de generar informes detallados sobre la información registrada de sus clientes, incluyendo la cantidad de clientes registrados, la cantidad de clientes con una cuenta activa y la cantidad de clientes con una cuenta inactiva.</p>
-                    <p>El sistema debe ser capaz de generar informes detallados sobre la información registrada de sus clientes, incluyendo la cantidad de clientes registrados, la cantidad de clientes con una cuenta activa y la cantidad de clientes con una cuenta inactiva.</p>           
-                </div>
-                <div class="project">
-                        <h3>API para Predicción de Ventas</h3>
-                        <p>Creación de una API en Flask que predice ventas mediante modelos de regresión en Python.</p>
-                </div>
-            </div>
-        </section>
-        <section id="gallery" class="gallery">
-            <h2>Galería</h2>
-            <div class="gallery-container">
-                <!-- Imagen 1 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_1.gif" alt="Imagen 1">
-                </div>
-        
-                <!-- Imagen 2 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_2.png" alt="Imagen 2">
-                </div>
-        
-                <!-- Imagen 3 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_3.png" alt="Imagen 3">
-                </div>
-        
-                <!-- Imagen 4 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_4.png" alt="Imagen 4">
-                </div>
-        
-                <!-- Imagen 5 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_5.jpg" alt="Imagen 5">
-                </div>
-        
-                <!-- Imagen 6 -->
-                <div class="gallery-item">
-                    <img src="imagenes/galeria/imagen_6.png" alt="Imagen 6">
-                </div>
-            </div>
-        </section>
-        
-        <section id="skills" class="skills">
-            <h2>Habilidades</h2>
-            <div class="skills-container">
-                <!-- Habilidad Python -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Icon" class="icon">
-                    </div>
-                    <label for="python">Python</label>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
-                    </div>
-                    <span>90%</span>
-                </div>
-        
-                <!-- Habilidad Machine Learning -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/220px-Scikit_learn_logo_small.svg.png" alt="Machine Learning Icon" class="icon">
-                    </div>
-                    <label for="ml">Machine Learning</label>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
-                    </div>
-                    <span>85%</span>
-                </div>
-        
-                <!-- Habilidad Big Data -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/250px-Apache_Spark_logo.svg.png" alt="Big Data Icon" class="icon">
-                    </div>
-                    <label for="bigdata">Big Data</label>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
-                    </div>
-                    <span>80%</span>
-                </div>
-                 <!-- Habilidad Big Data -->
-                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Streamlit-logo-primary-colormark-darktext.png/800px-Streamlit-logo-primary-colormark-darktext.png" alt="Big Data Icon" class="icon">
-                    </div>
-                    <label for="bigdata">Big Data</label>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
-                    </div>
-                    <span>80%</span>
-                </div>
-            </div>
-        </section>
+  <header>
+    <h1>Gabriel Vargas Méndez</h1>
+    <nav>
+      <!-- Enlaces a secciones -->
+      <ul>
+        <li><a href="#about">Sobre Mi</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#publications">Publicaciones</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Layout principal con dos sidebars y contenido central -->
+  <div class="layout">
+    <!-- Sidebar Izquierdo: Redes Sociales y Educación -->
+    <aside class="sidebar sidebar-left">
+      <div class="sidebar-section">
+        <h3>Redes Sociales 🌐</h3>
+        <div class="sidebar-items">
+          <p><strong>Instagram:</strong> gabo_v_mendez</p>
+          <p><strong>Facebook:</strong> gabriel_vargas_mendez</p>
+          <p><strong>Email:</strong> gabrielvargasm012@gmail.com</p>
+          <p><strong>WhatsApp:</strong> +591 76981534</p>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h3>Educación 🎓</h3>
+        <div class="sidebar-items">
+          <p><strong>Colegio Particular La Salle <span class="white-text">(Cbba) (2009-2022)</span></strong></p>
+          <p><strong>Liceo Estatal Humanístico "M.T.S. Cicerone" <span class="white-text">(Italia) (2022-2023)</span></strong></p>
+          <p><strong>Ing. Ciencia de Datos e Inteligencia de Negocios <span class="white-text">(Univalle - Cbba) (2024-2028, en proceso)</span></strong></p>
+          <p><strong>Instituto de Idiomas “Eduserver”</strong> (Becado para francés)</p>
+          <p><strong>Programa de Intercambio en Italia <span class="white-text">(AFS 2022-2023)</span></strong></p>
+          <p><strong>Cursos de Programación Avanzada en Udemy</strong></p>
+          <p><strong>Análisis de Datos en Excel con Python <span class="white-text">(en proceso)</span></strong></p>
+        </div>
+      </div>
+    </aside>
     
-        <section id="recommendations" class="recommendations">
-            <h2>Recomendaciones Profesionales</h2>
-            <div class="recommendations-container">
-                <!-- Tarjeta 1 -->
-                <div class="recommendation-card">
-                    <p class="quote">"Excelente en la resolución de problemas complejos, siempre entrega soluciones eficientes."</p>
-                    <span class="author">Juan Pérez, Analista de Datos</span>
-                </div>
-        
-                <!-- Tarjeta 2 -->
-                <div class="recommendation-card">
-                    <p class="quote">"Un profesional comprometido y con gran capacidad técnica. Altamente recomendado."</p>
-                    <span class="author">María López, Ingeniera de Software</span>
-                </div>
-        
-                <!-- Tarjeta 3 -->
-                <div class="recommendation-card">
-                    <p class="quote">"Una persona que sabe cómo abordar proyectos de gran escala y siempre logra resultados impresionantes."</p>
-                    <span class="author">Carlos Rodríguez, Gerente de Tecnología</span>
-                </div>
-        
-                <!-- Tarjeta 4 -->
-                <div class="recommendation-card">
-                    <p class="quote">"Es un placer trabajar con alguien tan meticuloso y apasionado por la innovación."</p>
-                    <span class="author">Laura Gómez, Consultora de Big Data</span>
-                </div>
+    <!-- Contenido Principal -->
+    <main class="main-content">
+      <!-- Sección Sobre Mi -->
+      <section id="about" class="hero">
+        <div class="hero-text">
+          <h2>Sobre Mi</h2>
+          <p>
+            Soy Gabriel Vargas, estudiante de Ingeniería en Ciencia de Datos e Inteligencia de Negocios en la Universidad Privada del Valle en Cochabamba, Bolivia.
+            Apasionado por la analítica y visualización de datos, los idiomas y el intercambio cultural, reconocido por mi dedicación, resiliencia y habilidades de liderazgo
+            en entornos académicos y comunitarios.
+          </p>
+          <p>
+            He gestionado encuentros de toda clase y trabajado en equipo para organizar eventos, lo que me ha brindado experiencia
+            en coordinación, administración y solución de problemas.
+          </p>
+          <p>
+            Comprometido con el aprendizaje continuo, busco superar desafíos y aportar soluciones innovadoras en cada proyecto.
+          </p>
+        </div>
+        <img src="imagenes/yoincahuasi.jpeg" alt="Foto de Perfil" class="profile-img">
+      </section>
+      
+      <!-- Sección Experiencia (detalles colapsables, mostrados lado a lado) -->
+      <section id="experience" class="experience">
+        <h2>Experiencia</h2>
+        <div class="collapsible-container">
+          <details class="collapsible-box">
+            <summary>Experiencia Laboral</summary>
+            <p>
+              <strong>POLIDEPORTIVO “GULAG” (Octubre 2023 - Febrero 2024):</strong> Árbitro y Gestor de Encuentros de Paintball.
+              Encargado del manejo de caja, administración, coordinación de horarios y limpieza del local.
+            </p>
+            <p>
+              <strong>EN CASA, COCHABAMBA (Diciembre 2024 - Actualidad):</strong> Vendedor y Atención al Cliente.
+              Encargado de vender productos a través de Marketplace, promocionarlos y coordinar con clientes.
+            </p>
+          </details>
+          <details class="collapsible-box">
+            <summary>Experiencia Extracurricular</summary>
+            <p>
+              <strong>Voluntariado en AFS Bolivia (2023 - Actualidad):</strong> Apoyo a estudiantes internacionales en su proceso de intercambio.
+              Promoción del intercambio cultural mediante la interacción en varios idiomas.
+            </p>
+            <p>
+              <strong>Líder en Comunidad Pastoral Escolar (2017 - 2022):</strong> Organización de actividades de caridad, convivencias y eventos solidarios.
+              Desarrollo de habilidades de liderazgo y trabajo en equipo.
+            </p>
+            <p>
+              <strong>Participación en Proyectos Académicos y Comunitarios:</strong> Lideré y colaboré en proyectos escolares de alto impacto.
+              Destacado en competencias y presentaciones académicas.
+            </p>
+          </details>
+        </div>
+      </section>
+      
+      <!-- Sección Galería -->
+      <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-container" id="galleryContainer">
+          <div class="gallery-item"><img src="imagenes/yoflorencia.jpeg" alt="Imagen 1"></div>
+          <div class="gallery-item"><img src="imagenes/yopetamateo.jpeg" alt="Imagen 2"></div>
+          <div class="gallery-item"><img src="imagenes/yosantacruz.jpeg" alt="Imagen 3"></div>
+          <div class="gallery-item"><img src="imagenes/yopasamontañas.jpeg" alt="Imagen 4"></div>
+          <div class="gallery-item"><img src="imagenes/yoboticcelli.jpeg" alt="Imagen 5"></div>
+          <div class="gallery-item"><img src="imagenes/yopisa.jpeg" alt="Imagen 6"></div>
+          <div class="gallery-item"><img src="imagenes/yoatardeceruyuni.jpeg" alt="Imagen 7"></div>
+          <div class="gallery-item"><img src="imagenes/yodavid.jpeg" alt="Imagen 8"></div>
+          <div class="gallery-item"><img src="imagenes/yoelio.jpeg" alt="Imagen 9"></div>
+          <div class="gallery-item"><img src="imagenes/yopaul.jpeg" alt="Imagen 10"></div>
+          <div class="gallery-item"><img src="imagenes/yopiscina.jpeg" alt="Imagen 11"></div>
+          <div class="gallery-item"><img src="imagenes/yotermas.JPG" alt="Imagen 12"></div>
+          <div class="gallery-item"><img src="imagenes/yocisne.jpg" alt="Imagen 13"></div>
+          <div class="gallery-item"><img src="imagenes/yocuadrohonor.jpeg" alt="Imagen 14"></div>
+          <div class="gallery-item"><img src="imagenes/yobanderas.jpg" alt="Imagen 15"></div>
+        </div>
+        <button class="gallery-button" id="galleryButton">Ver más</button>
+      </section>
+      
+      <!-- Sección Habilidades -->
+      <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+        <!-- Se muestra solo la primera fila (4 tarjetas) inicialmente -->
+        <div class="skills-container" id="skillsContainer">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
             </div>
-        </section>
-        <section id="articles" class="articles">
-            <h2>Artículos y Publicaciones</h2>
-            <div class="articles-container">
-                <!-- Artículo 1 -->
-                <div class="article-card">
-                    <h3 class="article-title">"Cómo la Inteligencia Artificial está Transformando el Sector Tecnológico"</h3>
-                    <p class="article-summary">En este artículo se analiza cómo la inteligencia artificial está impactando diversos sectores industriales, desde la automatización hasta la toma de decisiones más inteligentes.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-        
-                <!-- Artículo 2 -->
-                <div class="article-card">
-                    <h3 class="article-title">"El Futuro de Big Data: Tendencias y Oportunidades en 2025"</h3>
-                    <p class="article-summary">Exploramos las tendencias emergentes en Big Data, incluyendo el crecimiento del procesamiento en tiempo real y la integración de nuevas tecnologías de almacenamiento masivo.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-        
-                <!-- Artículo 3 -->
-                <div class="article-card">
-                    <h3 class="article-title">"Introducción a Machine Learning para Principiantes"</h3>
-                    <p class="article-summary">Una guía paso a paso para comprender los conceptos fundamentales de machine learning, desde los algoritmos básicos hasta su implementación en proyectos reales.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-        
-                <!-- Artículo 4 -->
-                <div class="article-card">
-                    <h3 class="article-title">"Optimización de Modelos Predictivos en Python"</h3>
-                    <p class="article-summary">Descubre cómo mejorar la precisión de tus modelos predictivos utilizando técnicas de optimización en Python, con ejemplos prácticos y herramientas avanzadas.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
+            <label>Python</label>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            <span>90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Análisis de Datos">
             </div>
-        </section>
-        <section id="contact">
+            <label>Análisis de Datos</label>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            <span>80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
+            </div> 
+            <label>Excel</label>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            <span>85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/2452/2452764.png" alt="Comunicación">
+            </div>
+            <label>Comunicación</label>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            <span>90%</span>
+          </div>
+          <!-- Habilidades adicionales (ocultas inicialmente) -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/3176/3176290.png" alt="Organización de Proyectos">
+            </div>
+            <label>Organización de Proyectos</label>
+            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            <span>90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/1041/1041928.png" alt="Liderazgo">
+            </div>
+            <label>Liderazgo</label>
+            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+            <span>95%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Canva">
+            </div>
+            <label>Canva</label>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            <span>85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/5732/5732861.png" alt="Visualización de Datos">
+            </div>
+            <label>Visualización de Datos</label>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            <span>85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/2640/2640600.png" alt="Trabajo en Equipo">
+            </div>
+            <label>Trabajo en Equipo</label>
+            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            <span>80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Word y Microsoft 365">
+            </div>
+            <label>Word</label>
+            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            <span>85%</span>
+          </div>
+        </div>
+        <button class="skills-button" id="skillsButton">Ver más</button>
+      </section>
+      
+      <!-- Sección Proyectos -->
+      <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <!-- Se muestra solo la primera fila inicialmente -->
+        <div class="projects-container" id="projectsContainer">
+          <div class="project">
+            <h3>Sistema de Gestión de Inventario</h3>
+            <p>
+              Desarrollo de un sistema para gestionar inventarios, permitiendo registrar, buscar y generar informes detallados de productos.
+            </p>
+            <p>Interfaz intuitiva con reportes automatizados para un seguimiento eficiente.</p>
+          </div>
+          <div class="project">
+            <h3>Sistema de Gestión de Clientes</h3>
+            <p>
+              Aplicación para el registro y seguimiento de clientes, con funciones de búsqueda y análisis de datos que facilitan la toma de decisiones.
+            </p>
+          </div>
+          <div class="project">
+            <h3>API para Predicción de Ventas</h3>
+            <p>
+              Implementación de una API en Flask que utiliza modelos de regresión en Python para predecir tendencias de ventas.
+            </p>
+          </div>
+          <!-- Proyectos adicionales (ocultos inicialmente) -->
+          <div class="project">
+            <h3>Plataforma de Intercambio Cultural</h3>
+            <p>
+              Plataforma e-learning para apoyar a estudiantes internacionales, integrando foros y recursos educativos multilingües, sistema de mensajería y calendario de eventos.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Sistema de Gestión de Eventos</h3>
+            <p>
+              Herramienta para organizar y programar eventos deportivos, con reportes de asistencia, creación de calendarios y gestión de inscripciones.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Análisis Predictivo en Excel y Python</h3>
+            <p>
+              Análisis de grandes volúmenes de datos mediante Excel y Python, aplicando técnicas de machine learning para predecir ventas.
+            </p>
+          </div>
+        </div>
+        <button class="projects-button" id="projectsButton">Ver más</button>
+      </section>
+      
+      <!-- Sección Publicaciones -->
+      <section id="publications" class="publications">
+        <h2>Publicaciones</h2>
+        <!-- Se muestra solo la primera fila (4 tarjetas) inicialmente -->
+        <div class="publications-container" id="publicationsContainer">
+          <div class="article-card">
+            <h3 class="article-title">"El Impacto de la Inteligencia Artificial en la Industria"</h3>
+            <p class="article-summary">Explora cómo la IA transforma procesos y mejora la eficiencia en distintos sectores.</p>
+            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"Tendencias en Big Data y Análisis Predictivo"</h3>
+            <p class="article-summary">Una visión a futuro sobre el manejo de grandes volúmenes de datos y su aplicación en el mercado.</p>
+            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"Guía para Iniciarse en el Análisis de Datos"</h3>
+            <p class="article-summary">Conceptos básicos y herramientas esenciales para comenzar en el análisis de datos.</p>
+            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"Estrategias para Mejorar la Comunicación Intercultural"</h3>
+            <p class="article-summary">Consejos y técnicas para fortalecer la comunicación en entornos multiculturales.</p>
+            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
+          </div>
+          <!-- Publicaciones adicionales (ocultas inicialmente) -->
+          <div class="article-card">
+            <h3 class="article-title">"El éxito es la suma de pequeños esfuerzos"</h3>
+            <p class="article-summary">"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+            <p class="article-author"><strong>Robert Collier</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"La motivación te pone en marcha"</h3>
+            <p class="article-summary">"La motivación es lo que te pone en marcha, el hábito es lo que te hace continuar."</p>
+            <p class="article-author"><strong>Jim Ryun</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"Aprende como si fueras a vivir para siempre"</h3>
+            <p class="article-summary">"Vive como si fueras a morir mañana."</p>
+            <p class="article-author"><strong>Mahatma Gandhi</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"La vida es 10% lo que te sucede"</h3>
+            <p class="article-summary">"... y 90% cómo reaccionas."</p>
+            <p class="article-author"><strong>Charles R. Swindoll</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"La inteligencia es la habilidad de adaptarse al cambio"</h3>
+            <p class="article-summary">Reflexión sobre la importancia de la flexibilidad y la innovación.</p>
+            <p class="article-author"><strong>Stephen Hawking</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"La educación es el arma más poderosa"</h3>
+            <p class="article-summary">"Es la mejor forma de cambiar el mundo."</p>
+            <p class="article-author"><strong>Nelson Mandela</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"La simplicidad es la máxima sofisticación"</h3>
+            <p class="article-summary">Visión sobre la importancia de la elegancia y la claridad.</p>
+            <p class="article-author"><strong>Leonardo da Vinci</strong></p>
+          </div>
+          <div class="article-card">
+            <h3 class="article-title">"El futuro pertenece a quienes creen en la belleza de sus sueños"</h3>
+            <p class="article-summary">Inspiración para mantener la esperanza y la visión.</p>
+            <p class="article-author"><strong>Eleanor Roosevelt</strong></p>
+          </div>
+        </div>
+        <button class="publications-button" id="publicationsButton">Ver más</button>
+      </section>
+      
+      <!-- Sección Contacto -->
+      <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Tu email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Tu mensaje"></textarea>
+            
+            <button type="submit">Enviar</button>
+          </form>
+          <p class="contact-info">
+            Tel: +591 76981534<br>
+            Email: <a href="mailto:gabrielvargasm012@gmail.com">gabrielvargasm012@gmail.com</a><br>
+            Dirección: Calle Bartolomé Navarrete, Pacata Baja
+          </p>
+        </div>
+      </section>
+    </main>
     
-            <h2>Contacto</h2>
-            <div class="contact-form">
-                <form action="">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" placeholder="Mensaje"></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </div>
+    <!-- Sidebar Derecho: Reconocimientos e Idiomas -->
+    <aside class="sidebar sidebar-right">
+      <div class="sidebar-section">
+        <h3>Reconocimientos 🏅</h3>
+        <div class="sidebar-items">
+          <p><strong>Mejor promedio de la promoción y del colegio</strong></p>
+          <p><strong>Miembro del cuadro de honor en la universidad</strong></p>
+          <p><strong>Apasionado por los idiomas e intercambio cultural</strong></p>
+          <p><strong>Dedicación, resiliencia y habilidades de liderazgo</strong></p>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <h3>Idiomas</h3>
+        <div class="sidebar-items">
+          <p>🇪🇸 <strong>Español:</strong> Nativo</p>
+          <p>🇬🇧 <strong>Inglés:</strong> Fluido (C1)</p>
+          <p>🇮🇹 <strong>Italiano:</strong> Fluido (C1)</p>
+          <p>🇫🇷 <strong>Francés:</strong> Básico (A2)</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+  
+  <footer>
+    <p>© 2025 Gabriel Vargas - Cochabamba, Bolvia - Todos los derechos reservados.</p>
+  </footer>
+  
+  <!-- Scripts para expandir/contraer secciones -->
+  <script>
+    // GALERÍA
+    const galleryButton = document.getElementById('galleryButton');
+    const galleryContainer = document.getElementById('galleryContainer');
+    let galleryExpanded = false;
+    galleryButton.addEventListener('click', () => {
+      galleryExpanded = !galleryExpanded;
+      if(galleryExpanded) {
+        galleryContainer.classList.add('expanded');
+        galleryButton.textContent = "Ver menos";
+      } else {
+        galleryContainer.classList.remove('expanded');
+        galleryButton.textContent = "Ver más";
+      }
+    });
+    
+    // HABILIDADES
+    const skillsButton = document.getElementById('skillsButton');
+    const skillsContainer = document.getElementById('skillsContainer');
+    let skillsExpanded = false;
+    skillsButton.addEventListener('click', () => {
+      skillsExpanded = !skillsExpanded;
+      if(skillsExpanded) {
+        skillsContainer.classList.add('expanded');
+        skillsButton.textContent = "Ver menos";
+      } else {
+        skillsContainer.classList.remove('expanded');
+        skillsButton.textContent = "Ver más";
+      }
+    });
+    
+    // PROYECTOS
+    const projectsButton = document.getElementById('projectsButton');
+    const projectsContainer = document.getElementById('projectsContainer');
+    let projectsExpanded = false;
+    projectsButton.addEventListener('click', () => {
+      projectsExpanded = !projectsExpanded;
+      if(projectsExpanded) {
+        projectsContainer.classList.add('expanded');
+        projectsButton.textContent = "Ver menos";
+      } else {
+        projectsContainer.classList.remove('expanded');
+        projectsButton.textContent = "Ver más";
+      }
+    });
+    
+    // PUBLICACIONES
+    const publicationsButton = document.getElementById('publicationsButton');
+    const publicationsContainer = document.getElementById('publicationsContainer');
+    let publicationsExpanded = false;
+    publicationsButton.addEventListener('click', () => {
+      publicationsExpanded = !publicationsExpanded;
+      if(publicationsExpanded) {
+        publicationsContainer.classList.add('expanded');
+        publicationsButton.textContent = "Ver menos";
+      } else {
+        publicationsContainer.classList.remove('expanded');
+        publicationsButton.textContent = "Ver más";
+      }
+    });
+  </script>
 </body>
-<footer>
-    <p>© 2021 Rudy Manzaneda- Todos los derechos reservados - Docente Univalle</p>
-</footer>
 </html>
