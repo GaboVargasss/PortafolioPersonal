@@ -3,449 +3,605 @@
 <head>
   <meta charset="UTF-8">
   <title>Portafolio Personal - Gabriel Vargas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <header>
-    <h1>Gabriel Vargas Méndez</h1>
-    <nav>
-      <!-- Enlaces a secciones -->
-      <ul>
-        <li><a href="#about">Sobre Mi</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#gallery">Galería</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#publications">Publicaciones</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header class="bg-header text-light py-3 shadow sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="m-0">Gabriel Vargas Méndez</h1>
+      <nav>
+        <ul class="nav">
+          <!-- Cada enlace envuelto en un recuadro (.nav-box) -->
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#about">Sobre Mi</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#experience">Experiencia</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#gallery">Galería</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#skills">Habilidades</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#publications">Publicaciones</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link nav-box text-center" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <!-- Layout principal con dos sidebars y contenido central -->
-  <div class="layout">
-    <!-- Sidebar Izquierdo: Redes Sociales y Educación -->
-    <aside class="sidebar sidebar-left">
-      <div class="sidebar-section">
-        <h3>Redes Sociales 🌐</h3>
-        <div class="sidebar-items">
-          <p><strong>Instagram:</strong> gabo_v_mendez</p>
-          <p><strong>Facebook:</strong> gabriel_vargas_mendez</p>
-          <p><strong>Email:</strong> gabrielvargasm012@gmail.com</p>
-          <p><strong>WhatsApp:</strong> +591 76981534</p>
+  <!-- Contenedor Principal -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Sidebar Izquierdo -->
+      <aside class="col-lg-3 col-md-12 mb-4">
+        <div class="mb-3 p-3 bg-secondary rounded shadow-sm">
+          <h3 class="text-center text-warning">Redes Sociales 🌐</h3>
+          <div>
+            <p><strong class="highlight-header">Instagram:</strong> gabo_v_mendez</p>
+            <p><strong class="highlight-header">Facebook:</strong> gabriel_vargas_mendez</p>
+            <p><strong class="highlight-header">Email:</strong> gabrielvargasm012@gmail.com</p>
+            <p><strong class="highlight-header">WhatsApp:</strong> +591 76981534</p>
+          </div>
         </div>
-      </div>
-      <div class="sidebar-section">
-        <h3>Educación 🎓</h3>
-        <div class="sidebar-items">
-          <p><strong>Colegio Particular La Salle <span class="white-text">(Cbba) (2009-2022)</span></strong></p>
-          <p><strong>Liceo Estatal Humanístico "M.T.S. Cicerone" <span class="white-text">(Italia) (2022-2023)</span></strong></p>
-          <p><strong>Ing. Ciencia de Datos e Inteligencia de Negocios <span class="white-text">(Univalle - Cbba) (2024-2028, en proceso)</span></strong></p>
-          <p><strong>Instituto de Idiomas “Eduserver”</strong> (Becado para francés)</p>
-          <p><strong>Programa de Intercambio en Italia <span class="white-text">(AFS 2022-2023)</span></strong></p>
-          <p><strong>Cursos de Programación Avanzada en Udemy</strong></p>
-          <p><strong>Análisis de Datos en Excel con Python <span class="white-text">(en proceso)</span></strong></p>
+        <div class="p-3 bg-secondary rounded shadow-sm">
+          <h3 class="text-center text-warning">Educación 🎓</h3>
+          <div>
+            <p><strong class="highlight-header">Colegio Particular La Salle</strong> <span class="white-text">(Cbba) (2009-2022)</span></p>
+            <p><strong class="highlight-header">Liceo Estatal Humanístico "M.T.S. Cicerone"</strong> <span class="white-text">(Italia) (2022-2023)</span></p>
+            <p><strong class="highlight-header">Ing. Ciencia de Datos e Inteligencia de Negocios</strong> <span class="white-text">(Univalle - Cbba) (2024-2028, en proceso)</span></p>
+            <p><strong class="highlight-header">Instituto de Idiomas “Eduserver”</strong> (Becado para francés)</p>
+            <p><strong class="highlight-header">Programa de Intercambio en Italia</strong> <span class="white-text">(AFS 2022-2023)</span></p>
+            <p><strong class="highlight-header">Cursos de Programación Avanzada en Udemy</strong></p>
+            <p><strong class="highlight-header">Análisis de Datos en Excel con Python</strong> <span class="white-text">(en proceso)</span></p>
+          </div>
         </div>
-      </div>
-    </aside>
-    
-    <!-- Contenido Principal -->
-    <main class="main-content">
-      <!-- Sección Sobre Mi -->
-      <section id="about" class="hero">
-        <div class="hero-text">
-          <h2>Sobre Mi</h2>
-          <p>
-            Soy Gabriel Vargas, estudiante de Ingeniería en Ciencia de Datos e Inteligencia de Negocios en la Universidad Privada del Valle en Cochabamba, Bolivia.
-            Apasionado por la analítica y visualización de datos, los idiomas y el intercambio cultural, reconocido por mi dedicación, resiliencia y habilidades de liderazgo
-            en entornos académicos y comunitarios.
-          </p>
-          <p>
-            He gestionado encuentros de toda clase y trabajado en equipo para organizar eventos, lo que me ha brindado experiencia
-            en coordinación, administración y solución de problemas.
-          </p>
-          <p>
-            Comprometido con el aprendizaje continuo, busco superar desafíos y aportar soluciones innovadoras en cada proyecto.
-          </p>
-        </div>
-        <img src="imagenes/yoincahuasi.jpeg" alt="Foto de Perfil" class="profile-img">
-      </section>
+      </aside>
       
-      <!-- Sección Experiencia (detalles colapsables, mostrados lado a lado) -->
-      <section id="experience" class="experience">
-        <h2>Experiencia</h2>
-        <div class="collapsible-container">
-          <details class="collapsible-box">
-            <summary>Experiencia Laboral</summary>
+      <!-- Contenido Principal -->
+      <main class="col-lg-6 col-md-12 mb-4">
+        <!-- Sección Sobre Mi -->
+        <section id="about" class="hero mb-4 p-4 bg-dark rounded shadow-sm d-flex flex-wrap align-items-center">
+          <div class="flex-grow-1">
+            <h2 class="text-warning">Sobre Mi</h2>
             <p>
-              <strong>POLIDEPORTIVO “GULAG” (Octubre 2023 - Febrero 2024):</strong> Árbitro y Gestor de Encuentros de Paintball.
-              Encargado del manejo de caja, administración, coordinación de horarios y limpieza del local.
+              Soy Gabriel Vargas, estudiante de Ingeniería en Ciencia de Datos e Inteligencia de Negocios en la Universidad Privada del Valle en Cochabamba, Bolivia.
+              Apasionado por la analítica y visualización de datos, los idiomas y el intercambio cultural, reconocido por mi dedicación, resiliencia y habilidades de liderazgo
+              en entornos académicos y comunitarios.
             </p>
             <p>
-              <strong>EN CASA, COCHABAMBA (Diciembre 2024 - Actualidad):</strong> Vendedor y Atención al Cliente.
-              Encargado de vender productos a través de Marketplace, promocionarlos y coordinar con clientes.
-            </p>
-          </details>
-          <details class="collapsible-box">
-            <summary>Experiencia Extracurricular</summary>
-            <p>
-              <strong>Voluntariado en AFS Bolivia (2023 - Actualidad):</strong> Apoyo a estudiantes internacionales en su proceso de intercambio.
-              Promoción del intercambio cultural mediante la interacción en varios idiomas.
+              He gestionado encuentros de toda clase y trabajado en equipo para organizar eventos, lo que me ha brindado experiencia
+              en coordinación, administración y solución de problemas.
             </p>
             <p>
-              <strong>Líder en Comunidad Pastoral Escolar (2017 - 2022):</strong> Organización de actividades de caridad, convivencias y eventos solidarios.
-              Desarrollo de habilidades de liderazgo y trabajo en equipo.
+              Comprometido con el aprendizaje continuo, busco superar desafíos y aportar soluciones innovadoras en cada proyecto.
             </p>
-            <p>
-              <strong>Participación en Proyectos Académicos y Comunitarios:</strong> Lideré y colaboré en proyectos escolares de alto impacto.
-              Destacado en competencias y presentaciones académicas.
+          </div>
+          <!-- Foto centrada -->
+          <div class="w-100 d-flex justify-content-center mt-3">
+            <img src="imagenes/yoincahuasi.jpeg" alt="Foto de Perfil" class="profile-img img-fluid rounded clickable">
+          </div>
+        </section>
+        
+        <!-- Sección Experiencia -->
+        <section id="experience" class="experience mb-4 p-4 bg-dark rounded shadow-sm">
+          <h2 class="text-warning mb-3">Experiencia</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <details class="mb-3 p-3 bg-secondary rounded shadow-sm clickable">
+                <summary class="h5">Experiencia Laboral</summary>
+                <p>
+                  <strong class="highlight-header">POLIDEPORTIVO “GULAG” (Octubre 2023 - Febrero 2024):</strong> Árbitro y Gestor de Encuentros de Paintball.
+                  Encargado del manejo de caja, administración, coordinación de horarios y limpieza del local.
+                </p>
+                <p>
+                  <strong class="highlight-header">EN CASA, COCHABAMBA (Diciembre 2024 - Actualidad):</strong> Vendedor y Atención al Cliente.
+                  Encargado de vender productos a través de Marketplace, promocionarlos y coordinar con clientes.
+                </p>
+              </details>
+            </div>
+            <div class="col-md-6">
+              <details class="mb-3 p-3 bg-secondary rounded shadow-sm clickable">
+                <summary class="h5">Experiencia Extracurricular</summary>
+                <p>
+                  <strong class="highlight-header">Voluntariado en AFS Bolivia (2023 - Actualidad):</strong> Apoyo a estudiantes internacionales en su proceso de intercambio.
+                  Promoción del intercambio cultural mediante la interacción en varios idiomas.
+                </p>
+                <p>
+                  <strong class="highlight-header">Líder en Comunidad Pastoral Escolar (2017 - 2022):</strong> Organización de actividades de caridad, convivencias y eventos solidarios.
+                  Desarrollo de habilidades de liderazgo y trabajo en equipo.
+                </p>
+                <p>
+                  <strong class="highlight-header">Participación en Proyectos Académicos y Comunitarios:</strong> Lideré y colaboré en proyectos escolares de alto impacto.
+                  Destacado en competencias y presentaciones académicas.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Sección Galería -->
+        <section id="gallery" class="gallery mb-4 p-4 bg-dark rounded shadow-sm text-center">
+          <h2 class="text-warning mb-3">Galería</h2>
+          <div class="row g-2" id="galleryContainer">
+            <!-- Primer lote: 6 imágenes visibles inicialmente -->
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yoflorencia.jpeg" alt="Imagen 1" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yopetamateo.jpeg" alt="Imagen 2" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yosantacruz.jpeg" alt="Imagen 3" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yopasamontañas.jpeg" alt="Imagen 4" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yoboticcelli.jpeg" alt="Imagen 5" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item">
+              <img src="imagenes/yopisa.jpeg" alt="Imagen 6" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <!-- Imágenes extra (ocultas inicialmente) -->
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yoatardeceruyuni.jpeg" alt="Imagen 7" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yodavid.jpeg" alt="Imagen 8" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yoelio.jpeg" alt="Imagen 9" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yopaul.jpeg" alt="Imagen 10" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yopiscina.jpeg" alt="Imagen 11" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yotermas.JPG" alt="Imagen 12" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yocisne.jpg" alt="Imagen 13" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yocuadrohonor.jpeg" alt="Imagen 14" class="img-fluid rounded gallery-img clickable">
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 gallery-item extra-content d-none">
+              <img src="imagenes/yobanderas.jpg" alt="Imagen 15" class="img-fluid rounded gallery-img clickable">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="gallery-button btn btn-primary mt-3" id="galleryButton">Ver más</button>
+          </div>
+        </section>
+        
+        <!-- Sección Habilidades -->
+        <section id="skills" class="skills mb-4 p-4 bg-dark rounded shadow-sm">
+          <h2 class="text-warning mb-3">Habilidades</h2>
+          <div class="row g-3" id="skillsContainer">
+            <!-- Primer lote: 4 tarjetas visibles inicialmente -->
+            <div class="col-12 col-sm-6 col-md-3 skill-item">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="img-fluid">
+                </div>
+                <label>Python</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Análisis de Datos" class="img-fluid">
+                </div>
+                <label>Análisis de Datos</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" class="img-fluid">
+                </div>
+                <label>Excel</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2452/2452764.png" alt="Comunicación" class="img-fluid">
+                </div>
+                <label>Comunicación</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+            <!-- Tarjetas extra (ocultas inicialmente) -->
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3176/3176290.png" alt="Organización de Proyectos" class="img-fluid">
+                </div>
+                <label>Organización de Proyectos</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1041/1041928.png" alt="Liderazgo" class="img-fluid">
+                </div>
+                <label>Liderazgo</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 95%;">95%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Canva" class="img-fluid">
+                </div>
+                <label>Canva</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5732/5732861.png" alt="Visualización de Datos" class="img-fluid">
+                </div>
+                <label>Visualización de Datos</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2640/2640600.png" alt="Trabajo en Equipo" class="img-fluid">
+                </div>
+                <label>Trabajo en Equipo</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 skill-item extra-content d-none">
+              <div class="skill-card p-3 bg-secondary rounded shadow-sm clickable">
+                <div class="skill-icon mb-2">
+                  <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Word y Microsoft 365" class="img-fluid">
+                </div>
+                <label>Word</label>
+                <div class="progress w-100">
+                  <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="skills-button btn btn-primary mt-3" id="skillsButton">Ver más</button>
+          </div>
+        </section>
+        
+        <!-- Sección Proyectos -->
+        <section id="projects" class="projects mb-4 p-4 bg-dark rounded shadow-sm">
+          <h2 class="text-warning mb-3">Proyectos</h2>
+          <div class="row g-3" id="projectsContainer">
+            <!-- Primer lote: 3 proyectos visibles inicialmente -->
+            <div class="col-12 col-md-4 project-item">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">Sistema de Gestión de Inventario</h3>
+                <p>
+                  Desarrollo de un sistema para gestionar inventarios, permitiendo registrar, buscar y generar informes detallados de productos.
+                </p>
+                <p>Interfaz intuitiva con reportes automatizados para un seguimiento eficiente.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 project-item">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">Sistema de Gestión de Clientes</h3>
+                <p>
+                  Aplicación para el registro y seguimiento de clientes, con funciones de búsqueda y análisis de datos que facilitan la toma de decisiones.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 project-item">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">API para Predicción de Ventas</h3>
+                <p>
+                  Implementación de una API en Flask que utiliza modelos de regresión en Python para predecir tendencias de ventas.
+                </p>
+              </div>
+            </div>
+            <!-- Proyectos extra ocultos inicialmente -->
+            <div class="col-12 col-md-4 project-item extra-content d-none">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">Plataforma de Intercambio Cultural</h3>
+                <p>
+                  Plataforma e-learning para apoyar a estudiantes internacionales, integrando foros y recursos educativos multilingües, sistema de mensajería y calendario de eventos.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 project-item extra-content d-none">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">Sistema de Gestión de Eventos</h3>
+                <p>
+                  Herramienta para organizar y programar eventos deportivos, con reportes de asistencia, creación de calendarios y gestión de inscripciones.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 project-item extra-content d-none">
+              <div class="project p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="highlight-header">Análisis Predictivo en Excel y Python</h3>
+                <p>
+                  Análisis de grandes volúmenes de datos mediante Excel y Python, aplicando técnicas de machine learning para predecir ventas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="projects-button btn btn-primary mt-3" id="projectsButton">Ver más</button>
+          </div>
+        </section>
+        
+        <!-- Sección Publicaciones -->
+        <section id="publications" class="publications mb-4 p-4 bg-dark rounded shadow-sm">
+          <h2 class="text-warning mb-3">Publicaciones</h2>
+          <div class="row g-3" id="publicationsContainer">
+            <!-- Primer lote: 3 artículos visibles inicialmente -->
+            <div class="col-12 col-md-4 publication-item">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"El Impacto de la Inteligencia Artificial en la Industria"</h3>
+                <p class="article-summary">Explora cómo la IA transforma procesos y mejora la eficiencia en distintos sectores.</p>
+                <p class="article-author"><strong class="highlight-header">Autor:</strong> G. Vargas</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"Tendencias en Big Data y Análisis Predictivo"</h3>
+                <p class="article-summary">Una visión a futuro sobre el manejo de grandes volúmenes de datos y su aplicación en el mercado.</p>
+                <p class="article-author"><strong class="highlight-header">Autor:</strong> G. Vargas</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"Guía para Iniciarse en el Análisis de Datos"</h3>
+                <p class="article-summary">Conceptos básicos y herramientas esenciales para comenzar en el análisis de datos.</p>
+                <p class="article-author"><strong class="highlight-header">Autor:</strong> G. Vargas</p>
+              </div>
+            </div>
+            <!-- Artículos extra: ocultos inicialmente (se desplegarán en tandas de 3) -->
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"Estrategias para Mejorar la Comunicación Intercultural"</h3>
+                <p class="article-summary">Consejos y técnicas para fortalecer la comunicación en entornos multiculturales.</p>
+                <p class="article-author"><strong class="highlight-header">Autor:</strong> G. Vargas</p>
+              </div>
+            </div>
+            <!-- Resto de recuadros (cada uno con extra-content d-none) -->
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"El éxito es la suma de pequeños esfuerzos"</h3>
+                <p class="article-summary">"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+                <p class="article-author"><strong class="highlight-header">Robert Collier</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"La motivación te pone en marcha"</h3>
+                <p class="article-summary">"La motivación es lo que te pone en marcha, el hábito es lo que te hace continuar."</p>
+                <p class="article-author"><strong class="highlight-header">Jim Ryun</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"Aprende como si fueras a vivir para siempre"</h3>
+                <p class="article-summary">"Vive como si fueras a morir mañana."</p>
+                <p class="article-author"><strong class="highlight-header">Mahatma Gandhi</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"La vida es 10% lo que te sucede"</h3>
+                <p class="article-summary">"... y 90% cómo reaccionas."</p>
+                <p class="article-author"><strong class="highlight-header">Charles R. Swindoll</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"La inteligencia es la habilidad de adaptarse al cambio"</h3>
+                <p class="article-summary">Reflexión sobre la importancia de la flexibilidad y la innovación.</p>
+                <p class="article-author"><strong class="highlight-header">Stephen Hawking</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"La educación es el arma más poderosa"</h3>
+                <p class="article-summary">"Es la mejor forma de cambiar el mundo."</p>
+                <p class="article-author"><strong class="highlight-header">Nelson Mandela</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"La simplicidad es la máxima sofisticación"</h3>
+                <p class="article-summary">Visión sobre la importancia de la elegancia y la claridad.</p>
+                <p class="article-author"><strong class="highlight-header">Leonardo da Vinci</strong></p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 publication-item extra-content d-none">
+              <div class="article-card p-3 bg-secondary rounded shadow-sm clickable">
+                <h3 class="article-title highlight-header">"El futuro pertenece a quienes creen en la belleza de sus sueños"</h3>
+                <p class="article-summary">Inspiración para mantener la esperanza y la visión.</p>
+                <p class="article-author"><strong class="highlight-header">Eleanor Roosevelt</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="publications-button btn btn-primary mt-3" id="publicationsButton">Ver más</button>
+          </div>
+        </section>
+        
+        <!-- Sección Contacto -->
+        <section id="contact" class="contact mb-4 p-4 bg-dark rounded shadow-sm">
+          <h2 class="text-warning mb-3">Contacto</h2>
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Tu mensaje" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <p class="contact-info mt-3 text-center">
+              Tel: +591 76981534<br>
+              Email: gabrielvargasm012@gmail.com<br>
+              Dirección: Calle Bartolomé Navarrete, Pacata Baja
             </p>
-          </details>
-        </div>
-      </section>
+          </div>
+        </section>
+      </main>
       
-      <!-- Sección Galería -->
-      <section id="gallery" class="gallery">
-        <h2>Galería</h2>
-        <div class="gallery-container" id="galleryContainer">
-          <div class="gallery-item"><img src="imagenes/yoflorencia.jpeg" alt="Imagen 1"></div>
-          <div class="gallery-item"><img src="imagenes/yopetamateo.jpeg" alt="Imagen 2"></div>
-          <div class="gallery-item"><img src="imagenes/yosantacruz.jpeg" alt="Imagen 3"></div>
-          <div class="gallery-item"><img src="imagenes/yopasamontañas.jpeg" alt="Imagen 4"></div>
-          <div class="gallery-item"><img src="imagenes/yoboticcelli.jpeg" alt="Imagen 5"></div>
-          <div class="gallery-item"><img src="imagenes/yopisa.jpeg" alt="Imagen 6"></div>
-          <div class="gallery-item"><img src="imagenes/yoatardeceruyuni.jpeg" alt="Imagen 7"></div>
-          <div class="gallery-item"><img src="imagenes/yodavid.jpeg" alt="Imagen 8"></div>
-          <div class="gallery-item"><img src="imagenes/yoelio.jpeg" alt="Imagen 9"></div>
-          <div class="gallery-item"><img src="imagenes/yopaul.jpeg" alt="Imagen 10"></div>
-          <div class="gallery-item"><img src="imagenes/yopiscina.jpeg" alt="Imagen 11"></div>
-          <div class="gallery-item"><img src="imagenes/yotermas.JPG" alt="Imagen 12"></div>
-          <div class="gallery-item"><img src="imagenes/yocisne.jpg" alt="Imagen 13"></div>
-          <div class="gallery-item"><img src="imagenes/yocuadrohonor.jpeg" alt="Imagen 14"></div>
-          <div class="gallery-item"><img src="imagenes/yobanderas.jpg" alt="Imagen 15"></div>
-        </div>
-        <button class="gallery-button" id="galleryButton">Ver más</button>
-      </section>
-      
-      <!-- Sección Habilidades -->
-      <section id="skills" class="skills">
-        <h2>Habilidades</h2>
-        <!-- Se muestra solo la primera fila (4 tarjetas) inicialmente -->
-        <div class="skills-container" id="skillsContainer">
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
-            </div>
-            <label>Python</label>
-            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-            <span>90%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Análisis de Datos">
-            </div>
-            <label>Análisis de Datos</label>
-            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-            <span>80%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
-            </div> 
-            <label>Excel</label>
-            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            <span>85%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/2452/2452764.png" alt="Comunicación">
-            </div>
-            <label>Comunicación</label>
-            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-            <span>90%</span>
-          </div>
-          <!-- Habilidades adicionales (ocultas inicialmente) -->
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/3176/3176290.png" alt="Organización de Proyectos">
-            </div>
-            <label>Organización de Proyectos</label>
-            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-            <span>90%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/1041/1041928.png" alt="Liderazgo">
-            </div>
-            <label>Liderazgo</label>
-            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
-            <span>95%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Canva">
-            </div>
-            <label>Canva</label>
-            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            <span>85%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/5732/5732861.png" alt="Visualización de Datos">
-            </div>
-            <label>Visualización de Datos</label>
-            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            <span>85%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/2640/2640600.png" alt="Trabajo en Equipo">
-            </div>
-            <label>Trabajo en Equipo</label>
-            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-            <span>80%</span>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png" alt="Word y Microsoft 365">
-            </div>
-            <label>Word</label>
-            <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            <span>85%</span>
+      <!-- Sidebar Derecho -->
+      <aside class="col-lg-3 col-md-12 mb-4">
+        <div class="mb-3 p-3 bg-secondary rounded shadow-sm">
+          <h3 class="text-center text-warning">Reconocimientos 🏅</h3>
+          <div>
+            <p><strong class="highlight-header">Mejor promedio de la promoción y del colegio</strong></p>
+            <p><strong class="highlight-header">Miembro del cuadro de honor en la universidad</strong></p>
+            <p><strong class="highlight-header">Apasionado por los idiomas e intercambio cultural</strong></p>
+            <p><strong class="highlight-header">Dedicación, resiliencia y habilidades de liderazgo</strong></p>
           </div>
         </div>
-        <button class="skills-button" id="skillsButton">Ver más</button>
-      </section>
-      
-      <!-- Sección Proyectos -->
-      <section id="projects" class="projects">
-        <h2>Proyectos</h2>
-        <!-- Se muestra solo la primera fila inicialmente -->
-        <div class="projects-container" id="projectsContainer">
-          <div class="project">
-            <h3>Sistema de Gestión de Inventario</h3>
-            <p>
-              Desarrollo de un sistema para gestionar inventarios, permitiendo registrar, buscar y generar informes detallados de productos.
-            </p>
-            <p>Interfaz intuitiva con reportes automatizados para un seguimiento eficiente.</p>
-          </div>
-          <div class="project">
-            <h3>Sistema de Gestión de Clientes</h3>
-            <p>
-              Aplicación para el registro y seguimiento de clientes, con funciones de búsqueda y análisis de datos que facilitan la toma de decisiones.
-            </p>
-          </div>
-          <div class="project">
-            <h3>API para Predicción de Ventas</h3>
-            <p>
-              Implementación de una API en Flask que utiliza modelos de regresión en Python para predecir tendencias de ventas.
-            </p>
-          </div>
-          <!-- Proyectos adicionales (ocultos inicialmente) -->
-          <div class="project">
-            <h3>Plataforma de Intercambio Cultural</h3>
-            <p>
-              Plataforma e-learning para apoyar a estudiantes internacionales, integrando foros y recursos educativos multilingües, sistema de mensajería y calendario de eventos.
-            </p>
-          </div>
-          <div class="project">
-            <h3>Sistema de Gestión de Eventos</h3>
-            <p>
-              Herramienta para organizar y programar eventos deportivos, con reportes de asistencia, creación de calendarios y gestión de inscripciones.
-            </p>
-          </div>
-          <div class="project">
-            <h3>Análisis Predictivo en Excel y Python</h3>
-            <p>
-              Análisis de grandes volúmenes de datos mediante Excel y Python, aplicando técnicas de machine learning para predecir ventas.
-            </p>
+        <div class="p-3 bg-secondary rounded shadow-sm">
+          <h3 class="text-center text-warning">Idiomas</h3>
+          <div>
+            <p>🇪🇸 <strong class="highlight-header">Español:</strong> Nativo</p>
+            <p>🇬🇧 <strong class="highlight-header">Inglés:</strong> Fluido (C1)</p>
+            <p>🇮🇹 <strong class="highlight-header">Italiano:</strong> Fluido (C1)</p>
+            <p>🇫🇷 <strong class="highlight-header">Francés:</strong> Básico (A2)</p>
           </div>
         </div>
-        <button class="projects-button" id="projectsButton">Ver más</button>
-      </section>
-      
-      <!-- Sección Publicaciones -->
-      <section id="publications" class="publications">
-        <h2>Publicaciones</h2>
-        <!-- Se muestra solo la primera fila (4 tarjetas) inicialmente -->
-        <div class="publications-container" id="publicationsContainer">
-          <div class="article-card">
-            <h3 class="article-title">"El Impacto de la Inteligencia Artificial en la Industria"</h3>
-            <p class="article-summary">Explora cómo la IA transforma procesos y mejora la eficiencia en distintos sectores.</p>
-            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"Tendencias en Big Data y Análisis Predictivo"</h3>
-            <p class="article-summary">Una visión a futuro sobre el manejo de grandes volúmenes de datos y su aplicación en el mercado.</p>
-            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"Guía para Iniciarse en el Análisis de Datos"</h3>
-            <p class="article-summary">Conceptos básicos y herramientas esenciales para comenzar en el análisis de datos.</p>
-            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"Estrategias para Mejorar la Comunicación Intercultural"</h3>
-            <p class="article-summary">Consejos y técnicas para fortalecer la comunicación en entornos multiculturales.</p>
-            <p class="article-author"><strong>Autor:</strong> G. Vargas</p>
-          </div>
-          <!-- Publicaciones adicionales (ocultas inicialmente) -->
-          <div class="article-card">
-            <h3 class="article-title">"El éxito es la suma de pequeños esfuerzos"</h3>
-            <p class="article-summary">"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
-            <p class="article-author"><strong>Robert Collier</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"La motivación te pone en marcha"</h3>
-            <p class="article-summary">"La motivación es lo que te pone en marcha, el hábito es lo que te hace continuar."</p>
-            <p class="article-author"><strong>Jim Ryun</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"Aprende como si fueras a vivir para siempre"</h3>
-            <p class="article-summary">"Vive como si fueras a morir mañana."</p>
-            <p class="article-author"><strong>Mahatma Gandhi</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"La vida es 10% lo que te sucede"</h3>
-            <p class="article-summary">"... y 90% cómo reaccionas."</p>
-            <p class="article-author"><strong>Charles R. Swindoll</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"La inteligencia es la habilidad de adaptarse al cambio"</h3>
-            <p class="article-summary">Reflexión sobre la importancia de la flexibilidad y la innovación.</p>
-            <p class="article-author"><strong>Stephen Hawking</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"La educación es el arma más poderosa"</h3>
-            <p class="article-summary">"Es la mejor forma de cambiar el mundo."</p>
-            <p class="article-author"><strong>Nelson Mandela</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"La simplicidad es la máxima sofisticación"</h3>
-            <p class="article-summary">Visión sobre la importancia de la elegancia y la claridad.</p>
-            <p class="article-author"><strong>Leonardo da Vinci</strong></p>
-          </div>
-          <div class="article-card">
-            <h3 class="article-title">"El futuro pertenece a quienes creen en la belleza de sus sueños"</h3>
-            <p class="article-summary">Inspiración para mantener la esperanza y la visión.</p>
-            <p class="article-author"><strong>Eleanor Roosevelt</strong></p>
-          </div>
-        </div>
-        <button class="publications-button" id="publicationsButton">Ver más</button>
-      </section>
-      
-      <!-- Sección Contacto -->
-      <section id="contact" class="contact">
-        <h2>Contacto</h2>
-        <div class="contact-form">
-          <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Tu email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" placeholder="Tu mensaje"></textarea>
-            
-            <button type="submit">Enviar</button>
-          </form>
-          <p class="contact-info">
-            Tel: +591 76981534<br>
-            Email: <a href="mailto:gabrielvargasm012@gmail.com">gabrielvargasm012@gmail.com</a><br>
-            Dirección: Calle Bartolomé Navarrete, Pacata Baja
-          </p>
-        </div>
-      </section>
-    </main>
-    
-    <!-- Sidebar Derecho: Reconocimientos e Idiomas -->
-    <aside class="sidebar sidebar-right">
-      <div class="sidebar-section">
-        <h3>Reconocimientos 🏅</h3>
-        <div class="sidebar-items">
-          <p><strong>Mejor promedio de la promoción y del colegio</strong></p>
-          <p><strong>Miembro del cuadro de honor en la universidad</strong></p>
-          <p><strong>Apasionado por los idiomas e intercambio cultural</strong></p>
-          <p><strong>Dedicación, resiliencia y habilidades de liderazgo</strong></p>
-        </div>
-      </div>
-      <div class="sidebar-section">
-        <h3>Idiomas</h3>
-        <div class="sidebar-items">
-          <p>🇪🇸 <strong>Español:</strong> Nativo</p>
-          <p>🇬🇧 <strong>Inglés:</strong> Fluido (C1)</p>
-          <p>🇮🇹 <strong>Italiano:</strong> Fluido (C1)</p>
-          <p>🇫🇷 <strong>Francés:</strong> Básico (A2)</p>
-        </div>
-      </div>
-    </aside>
+      </aside>
+    </div>
   </div>
   
-  <footer>
+  <footer class="bg-secondary text-center py-3">
     <p>© 2025 Gabriel Vargas - Cochabamba, Bolvia - Todos los derechos reservados.</p>
   </footer>
   
-  <!-- Scripts para expandir/contraer secciones -->
+  <!-- Modal unificado para ampliar imágenes y recuadros -->
+  <div class="modal fade" id="enlargeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <!-- Fondo oscuro sin margen extra -->
+        <div class="modal-body p-0" id="modalContent"></div>
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS para toggle de botones y modal -->
   <script>
-    // GALERÍA
-    const galleryButton = document.getElementById('galleryButton');
-    const galleryContainer = document.getElementById('galleryContainer');
-    let galleryExpanded = false;
-    galleryButton.addEventListener('click', () => {
-      galleryExpanded = !galleryExpanded;
-      if(galleryExpanded) {
-        galleryContainer.classList.add('expanded');
-        galleryButton.textContent = "Ver menos";
-      } else {
-        galleryContainer.classList.remove('expanded');
-        galleryButton.textContent = "Ver más";
-      }
+    // Función para alternar la visibilidad del contenido extra en una sección
+    function toggleExtraContent(buttonId, containerSelector) {
+      const button = document.getElementById(buttonId);
+      const extras = document.querySelectorAll(containerSelector + ' .extra-content');
+      let isHidden = extras.length && extras[0].classList.contains('d-none');
+      extras.forEach(item => {
+        if(isHidden) {
+          item.classList.remove('d-none');
+        } else {
+          item.classList.add('d-none');
+        }
+      });
+      button.textContent = isHidden ? "Ver menos" : "Ver más";
+    }
+
+    // Eventos para cada botón "Ver más"
+    document.getElementById('galleryButton').addEventListener('click', () => {
+      toggleExtraContent('galleryButton', '#galleryContainer');
+    });
+    document.getElementById('skillsButton').addEventListener('click', () => {
+      toggleExtraContent('skillsButton', '#skillsContainer');
+    });
+    document.getElementById('projectsButton').addEventListener('click', () => {
+      toggleExtraContent('projectsButton', '#projectsContainer');
+    });
+    document.getElementById('publicationsButton').addEventListener('click', () => {
+      toggleExtraContent('publicationsButton', '#publicationsContainer');
     });
     
-    // HABILIDADES
-    const skillsButton = document.getElementById('skillsButton');
-    const skillsContainer = document.getElementById('skillsContainer');
-    let skillsExpanded = false;
-    skillsButton.addEventListener('click', () => {
-      skillsExpanded = !skillsExpanded;
-      if(skillsExpanded) {
-        skillsContainer.classList.add('expanded');
-        skillsButton.textContent = "Ver menos";
-      } else {
-        skillsContainer.classList.remove('expanded');
-        skillsButton.textContent = "Ver más";
-      }
-    });
+    // Modal para ampliar imágenes o recuadros:
+    // Si el elemento clickeado tiene la clase "gallery-img" o "profile-img", se muestra solo la imagen;
+    // De lo contrario, se clona el elemento completo.
+    // Para los elementos dentro de <details> (Experiencia), se requiere que el <details> esté abierto para activar el modal (dos clics).
+    const modal = new bootstrap.Modal(document.getElementById('enlargeModal'));
     
-    // PROYECTOS
-    const projectsButton = document.getElementById('projectsButton');
-    const projectsContainer = document.getElementById('projectsContainer');
-    let projectsExpanded = false;
-    projectsButton.addEventListener('click', () => {
-      projectsExpanded = !projectsExpanded;
-      if(projectsExpanded) {
-        projectsContainer.classList.add('expanded');
-        projectsButton.textContent = "Ver menos";
-      } else {
-        projectsContainer.classList.remove('expanded');
-        projectsButton.textContent = "Ver más";
-      }
-    });
-    
-    // PUBLICACIONES
-    const publicationsButton = document.getElementById('publicationsButton');
-    const publicationsContainer = document.getElementById('publicationsContainer');
-    let publicationsExpanded = false;
-    publicationsButton.addEventListener('click', () => {
-      publicationsExpanded = !publicationsExpanded;
-      if(publicationsExpanded) {
-        publicationsContainer.classList.add('expanded');
-        publicationsButton.textContent = "Ver menos";
-      } else {
-        publicationsContainer.classList.remove('expanded');
-        publicationsButton.textContent = "Ver más";
-      }
+    document.querySelectorAll('.clickable').forEach(item => {
+      item.addEventListener('click', function(e) {
+        // Si es un <details> y no está abierto, no se activa el modal (primer clic solo abre)
+        if (this.tagName.toLowerCase() === 'details' && !this.open) return;
+        const modalContent = document.getElementById('modalContent');
+        modalContent.innerHTML = ''; // limpiar contenido previo
+        
+        // Si es una imagen pura de galería o Sobre Mi, se muestra solo la imagen
+        if (this.classList.contains('gallery-img') || this.classList.contains('profile-img')) {
+          const img = this.tagName.toLowerCase() === 'img' ? this : this.querySelector('img');
+          if (img) {
+            const imgClone = document.createElement('img');
+            imgClone.src = img.src;
+            imgClone.className = 'img-fluid modal-img';
+            modalContent.appendChild(imgClone);
+          }
+        } else {
+          // Para habilidades, proyectos y publicaciones, se clona el recuadro y se eliminan estilos fijos para modal
+          const clone = this.cloneNode(true);
+          // Eliminar estilos de altura y overflow para que el modal se ajuste al contenido
+          clone.style.height = "auto";
+          clone.style.overflowY = "visible";
+          modalContent.appendChild(clone);
+        }
+        modal.show();
+      });
     });
   </script>
 </body>
